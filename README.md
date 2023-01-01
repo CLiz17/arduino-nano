@@ -1,1 +1,1 @@
-# arduino-snippets
+# arduino-nano snippets
