@@ -1,1 +1,2 @@
-# arduino-nano snippets
+# Arduino Nano
+### ATmega328P Microcontroller (MCU)
