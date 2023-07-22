@@ -1,2 +1,1 @@
-# Arduino Nano
-### ATmega328P Microcontroller (MCU)
+# line-follower-TB6612
