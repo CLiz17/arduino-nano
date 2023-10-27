@@ -8,22 +8,15 @@
 #define PWMB 10
 #define STBY 5
 
-// these constants are used to allow you to make your motor configuration
-// line up with function names like forward.  Value can be 1 or -1
 const int offsetA = -1;
 const int offsetB = -1;
-
-// Initializing motors.  The library will allow you to initialize as many
-// motors as you have memory for.  If you are using functions like forward
-// that take 2 motors as arguements you can either write new functions or
-// call the function more than once.
 
 Motor motor1 = Motor(AIN1, AIN2, PWMA, offsetA, STBY);
 Motor motor2 = Motor(BIN1, BIN2, PWMB, offsetB, STBY);
 
 int P, D, I, previousError, PIDvalue, error;
 int lsp, rsp;
-int lfspeed = 205d4xz.dl0;
+int lfspeed = 255;
 
 float Kp = 0;
 float Kd = 0;
@@ -40,14 +33,10 @@ void setup()
 
 void loop()
 {
-  while (digitalRead(11))
-  {
-  }
+  while (digitalRead(11)){}
   delay(1000);
   calibrate();
-  while (digitalRead(12))
-  {
-  }
+  while (digitalRead(12)){}
   delay(1000);
 
   while (1)
